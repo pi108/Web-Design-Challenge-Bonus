@@ -1,0 +1,221 @@
+<!-- =============================================================== -->
+<!-- BEGINNING OF THE SCRIPT -->
+<!-- =============================================================== -->
+
+<!DOCTYPE html>
+
+
+<!-- =============================================================== -->
+<!-- SET THE LANGUAGE TO ENGLISH (US) -->
+<!-- =============================================================== -->
+
+<html lang="en">
+
+
+<!-- =============================================================== -->
+<!-- BEGINNING OF THE HEAD SECTION -->
+<!-- SPECIFY META TAGS, TITLE, BOOTSTRAP LINKS JAVA SCRIPTS AND CSS STYLE-->
+<!-- =============================================================== -->
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Web Visualization Dashboard</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<!-- =============================================================== -->
+<!-- END OF THE HEAD SECTION -->
+<!-- =============================================================== -->
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF NAVIGATION SECTION -->
+<!-- ================================================= -->
+
+  <div>
+    <div class="row">
+      <div class="col col-6 homebtn">
+        <a href="index.html">HOME PAGE</a>
+      </div>
+      <div class="col col-6 menubuttons divtop">
+
+
+        <nav class="navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerFP"
+            aria-controls="navbarTogglerFP" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerFP">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="visualization-Brent_DJIA-01.html">Brent Crude vs DJIA (2010-2020)</a>
+                  <a class="dropdown-item" href="visualization-Gold_DJIA-01.html">Gold vs DJIA (2010-2020)</a>
+                  <a class="dropdown-item" href="visualization-CHYUSD_DJIA-01.html">YuanUSD vs DJIA (2010-2020)</a>
+                  <a class="dropdown-item" href="visualization-INRUSD_DJIA-01.html">RupeeUSD vs DJIA (2010-2020)</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+      </div>
+    </div>
+  </div>
+
+
+<!-- ================================================= -->
+<!-- END OF THE NAVIGATION SECTION -->
+<!-- ================================================= -->
+
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE CONTENT SECTION -->
+<!-- ================================================= -->
+  
+  <div class="container">
+    <br>
+    <div class="row">
+
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE LEFT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= -->      
+  
+      <div class="col col-12 col-md-8 divbdy">
+        <br>
+        <h1>Summary: DJIA vs. X</h1>
+        <hr>
+        <img src="Output/02_Analysis/BRENT_DJIA_ALL_2010_2020.png" alt="Brent Crude vs DJIA (2010-2020)" width="280" align="left">
+        <p>The purpose of this project was to analyze the relationship between the Dow Jones Indstrial Average (DJIA) and the following 4 key global economic indicators (over the period 04/19/2010 to 04/09/2020):
+          <br>
+          1. Price of Brent Crude Oil 
+          <br>
+          2. Price of Gold
+          <br>
+          3. The Chinese Yuan to the US Dollar Exchange Rate
+          <br>
+          4. The Indian Rupee to the US Dollar Exchange Rate
+          <hr>
+          To accomplish this analysis, we first extracted data using an API from the following website:
+          <br>
+          https://fred.stlouisfed.org/
+          <hr>
+          We then used the Pandas and Matplotlib libraries to clean the data, analyze the data, run regression analyses, and plot the regression graphs for each of the 4 sets of relationships mentioned above, for the entire time-period (2010 to 2020).
+          <br>
+          <br>
+          These graphs can be seen on the right side of this page. If you click on any of these graphs, it will take you to the page with the details for that particular relationship. The detailed page has a graph for the relationship for the entire time-period (2010-2020), as well as graphs for each of the 11 individual years within that time-period. 
+          <hr>
+          If you click on the menu item called "Plots" at the top right hand corner of this page, you can select from each of the 4 sets of relationships and see the graphs for the entire period (2010-2020) for that particular relationship, as well as for each of the individual years for that relationship. 
+          <hr>
+          If you click on the menu item called "Comparison" at the top right hand corner of this page, you can see the graphs for the 4 sets of relationships for the entire time period (2010-2020).
+          <hr>
+          If you click on the menu item called "Data" at the top right hand corner of this page, you can see the table with the underlying data that was used for this analysis.
+          <hr>          
+          To get back to this summary page from any of the other pages, please click  on the home button at the top left of the screen called "Go to Home Page".
+          </p>
+        <p></p>
+        <hr>
+      </div>
+  
+<!-- ================================================= -->
+<!-- END OF THE LEFT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= -->
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE RIGHT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= -->  
+      
+      <div class="col col-12 col-md-4 divbdy">
+        <br>
+        <h2>Visualizations</h2>
+        <hr>
+        <div class='row'>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-Brent_DJIA-01.html"><img src="Output/02_Analysis/BRENT_DJIA_ALL_2010_2020.png" alt="Brent Crude vs DJIA (2010-2020)"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-Gold_DJIA-01.html"><img src="Output/02_Analysis/GOLD_DJIA_ALL_2010_2020.png" alt="Gold vs DJIA (2010-2020)"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-01.html"><img src="Output/02_Analysis/CHYUSD_DJIA_ALL_2010_2020.png" alt="YuanUSD vs DJIA (2010-2020)"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-INRUSD_DJIA-01.html"><img src="Output/02_Analysis/INRUSD_DJIA_ALL_2010_2020.png" alt="RupeeUSD vs DJIA (2010-2020)"></a>
+          </div>
+        </div>
+      </div>
+      
+<!-- ================================================= -->
+<!-- END OF THE RIGHT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= -->        
+
+    </div>
+  </div>
+
+
+<!-- ================================================= -->
+<!-- END OF THE CONTENT SECTION -->
+<!-- ================================================= -->
+
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE FOOTER SECTION -->
+<!-- ================================================= -->
+  
+  <br>
+  <div>
+    <div class="row">
+      <div class="col col-12 divbtmdata">© Copyright pi108 2020</div>
+    </div>
+  </div>
+
+<!-- ================================================= -->
+<!-- END OF THE FOOTER SECTION -->
+<!-- ================================================= -->
+
+</body>
+
+</html>
+
+<!-- ================================================= -->
+<!-- END OF THE SCRIPT -->
+<!-- ================================================= -->

@@ -1,0 +1,235 @@
+<!-- =============================================================== -->
+<!-- BEGINNING OF THE SCRIPT -->
+<!-- =============================================================== -->
+
+<!DOCTYPE html>
+
+
+
+<!-- =============================================================== -->
+<!-- SET THE LANGUAGE TO ENGLISH (US) -->
+<!-- =============================================================== -->
+
+<html lang="en">
+
+
+
+<!-- =============================================================== -->
+<!-- BEGINNING OF THE HEAD SECTION -->
+<!-- SPECIFY META TAGS, TITLE, BOOTSTRAP LINKS JAVA SCRIPTS AND CSS STYLE-->
+<!-- =============================================================== -->
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Web Visualization Dashboard</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<!-- =============================================================== -->
+<!-- END OF THE HEAD SECTION -->
+<!-- =============================================================== -->
+
+
+<body>
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF NAVIGATION SECTION -->
+<!-- ================================================= -->
+
+ 
+  <div>
+    <div class="row">
+      <div class="col col-6 homebtn">
+        <a href="index.html">Go to Home Page</a>
+      </div>
+      <div class="col col-6 menubuttons divtop">
+
+
+        <nav class="navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerFP"
+            aria-controls="navbarTogglerFP" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerFP">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Plots
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="visualization-Brent_DJIA-01.html">Brent Crude vs DJIA (2010-2020)</a>
+                  <a class="dropdown-item" href="visualization-Gold_DJIA-01.html">Gold vs DJIA (2010-2020)</a>
+                  <a class="dropdown-item" href="visualization-CHYUSD_DJIA-01.html">YuanUSD vs DJIA (2010-2020)</a>
+                  <a class="dropdown-item" href="visualization-INRUSD_DJIA-01.html">RupeeUSD vs DJIA (2010-2020)</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+
+      </div>
+    </div>
+  </div>
+
+<!-- ================================================= -->
+<!-- END OF THE NAVIGATION SECTION -->
+<!-- ================================================= -->
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE CONTENT SECTION -->
+<!-- ================================================= -->
+  
+  <div class="container">
+    <br>
+    <div class="row">
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE LEFT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= --> 
+
+      
+      <div class="col col-12 col-md-8 divbdy">
+        <br>
+        <h1>Summary: Chinese Yuan / US Dollar Exchange Rate vs DJIA </h1>
+        <hr>
+        <a href="visualization-CHYUSD_DJIA-07.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2015.png" alt="Chinese Yuan / US Dollar Exchange Rate vs DJIA (2015)"></a>
+
+        <p>
+          <br>
+          <hr>
+          Relationship between the Chinese Yuan / US Dollar Exchange Rate and the Dow Jones Industrial Average:
+          <br>
+          For the period: 2015 
+          <br>
+          <hr>
+          We ran a linear regression for this period and got the following results:
+          <br>
+          R (Correlation): -0.57
+          <br>
+          R-Squared: 0.32
+          <br>
+          This implies that for this time period, there was no statistically significant relationship.
+        </p>
+        <hr>
+      </div>
+      
+<!-- ================================================= -->
+<!-- END OF THE LEFT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= -->       
+      
+<!-- ================================================= -->
+<!-- BEGINNING OF THE RIGHT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= -->       
+      
+      
+      <div class="col col-12 col-md-4 divbdy">
+        <br>
+        <h2>Visualizations</h2>
+        <hr>
+        <div class='row'>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-01.html"><img src="Output/02_Analysis/CHYUSD_DJIA_ALL_2010_2020.png" alt="CHYUSD_DJIA_ALL_2010_2020"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-02.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2010.png" alt="CHYUSD_DJIA_2010"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-03.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2011.png" alt="CHYUSD_DJIA_2011"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-04.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2012.png" alt="CHYUSD_DJIA_2012"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-05.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2013.png" alt="CHYUSD_DJIA_2013"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-06.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2014.png" alt="CHYUSD_DJIA_2014"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-07.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2015.png" alt="CHYUSD_DJIA_2015" id="imgsel"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-08.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2016.png" alt="CHYUSD_DJIA_2016"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-09.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2017.png" alt="CHYUSD_DJIA_2017"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-10.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2018.png" alt="CHYUSD_DJIA_2018"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-11.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2019.png" alt="CHYUSD_DJIA_2019"></a>
+          </div>
+          <div class="col col-3 col-md-6">
+            <a href="visualization-CHYUSD_DJIA-12.html"><img src="Output/02_Analysis/CHYUSD_DJIA_2020.png" alt="CHYUSD_DJIA_2020"></a>
+          </div>
+        </div>
+      </div>
+
+  
+<!-- ================================================= -->
+<!-- END OF THE RIGHT SIDE OF THE CONTENT SECTION -->
+<!-- ================================================= --> 
+
+    </div>
+  </div>
+
+<!-- ================================================= -->
+<!-- END OF THE CONTENT SECTION -->
+<!-- ================================================= -->
+
+
+<!-- ================================================= -->
+<!-- BEGINNING OF THE FOOTER SECTION -->
+<!-- ================================================= -->
+
+  
+  <br>
+  <div>
+    <div class="row">
+      <div class="col col-12 divbtmdata">© Copyright pi108 2020</div>
+    </div>
+  </div>
+
+<!-- ================================================= -->
+<!-- END OF THE FOOTER SECTION -->
+<!-- ================================================= -->
+
+
+</body>
+
+</html>
+
+<!-- ================================================= -->
+<!-- END OF THE SCRIPT -->
+<!-- ================================================= -->

@@ -1,0 +1,196 @@
+
+/* =========================================================================================================== */
+/* Giving the body the specified background color, adding font sizes for the h1, h2 and h3 elements            */
+/* =========================================================================================================== */
+
+body {
+  width: 100%;
+  min-height:100%;
+  background-color: lightgray;
+}
+
+h1, h2, h3{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: lightseagreen;
+}
+
+h1{
+  font-size: 24px;
+  font-weight: bold;
+  text-align:left;
+}
+
+h2{
+  font-size: 22px;
+  font-weight: bold;
+  text-align:left;
+}
+
+h3{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/* =========================================================================================================== */
+/* Giving the text in the paragraphs the specified color, and aligning the text to the left                    */
+/* =========================================================================================================== */
+
+p{
+  color: gray;
+  text-align:left;
+}
+
+
+
+/* =========================================================================================================== */
+/* Positioning the Navigation Bar and specifying the background color                                          */
+/* =========================================================================================================== */
+
+.navbar{
+    position: absolute;
+    right: 30px;
+}
+
+.navbar a{
+  background-color:white;
+}
+
+
+@media (max-width: 600px) 
+{
+  .navbar-dark.bg-dark{
+     background-color: lightseagreen !important;
+   }
+ }
+
+
+
+/* =========================================================================================================== */
+/* Specifying the width of the image and also the border on the image when it is selected                      */
+/* =========================================================================================================== */
+
+img {
+  max-width: 100%;
+}
+
+#imgsel{
+  border: lightseagreen 2px solid;
+}
+
+
+
+/* =========================================================================================================== */
+/* Specifying the width of the columns                                                                         */
+/* =========================================================================================================== */
+
+.col {
+  width: 100%;
+} 
+
+
+
+/* =========================================================================================================== */
+/* Specifying the background color, the width teh padding and the margin for the home button                   */
+/* Also speciifying the font family, size, weight and color for the etxt used in the home button               */
+/* =========================================================================================================== */
+
+.homebtn{
+  background-color: white;
+  z-index:2;
+}
+
+.homebtn a{
+  width: 110px;
+  background: lightseagreen;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  display: block;
+  padding: 14px;
+  margin: 0px 0px 0px 40px;
+}
+
+
+
+/* =========================================================================================================== */
+/* Specifying the background color and the z index for the top divider                                         */
+/* =========================================================================================================== */
+
+.divtop{
+  background-color: white;
+  z-index:2;
+}
+
+
+
+/* =========================================================================================================== */
+/* Specifying the background color and the z index for the body divider                                        */
+/* =========================================================================================================== */
+
+.divbdy{
+  background-color: white;
+  z-index:1;
+}
+
+
+
+/* ============================================================================================================== */
+/* Specifying the width, bottom, background color, z index, font size, color, text alignment, margin and padding  */ 
+/* for the bottom divider                                                                                         */
+/* ============================================================================================================== */
+
+.divbtm {
+  width:100%;
+  bottom:0;
+  background-color: gray;
+  z-index:0;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+  position: fixed;
+}
+
+.divbtmdata {
+  width:100%;
+  bottom:0;
+  background-color: gray;
+  z-index:0;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  margin: 0px;
+  position: sticky;
+}
+
+
+
+
+
+
+/* =========================================================================================================== */
+/* Specifying the background color, the z index and teh text alignment for the table divider                   */
+/* =========================================================================================================== */
+
+.divtable{
+  text-align:center;
+  background-color: white;
+  padding: 40px;
+  z-index:1;
+}
+
+
+
+
+
+
+/* =========================================================================================================== */
+/* END OF THE SCRIPT                                                                                           */
+/* =========================================================================================================== */
