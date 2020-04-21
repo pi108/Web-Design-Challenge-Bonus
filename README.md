@@ -23,6 +23,7 @@ We then used the Pandas and Matplotlib libraries to clean the data, analyze the 
 #### 51 HTML files as follows:
 #### index.html: 
 This is the main html file that connects all the other files. This file can be seen at the following website:
+
 https://pi108.github.io/Web-Design-Challenge-Bonus/
 #### data.html: 
 This file contains the underlying data (for the 4 relationships) that were analyzed for this project.
