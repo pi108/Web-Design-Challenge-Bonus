@@ -14,9 +14,13 @@ https://fred.stlouisfed.org/
 We then used the Pandas and Matplotlib libraries to clean the data, analyze the data, run regression analyses, and plot 48 regression graphs (12 each for the 4 sets of relationships mentioned above). 
 
 # This folder contains the following items:
-#### A jupyter notebook file called “00_Extraction_with_API” which uses the API to extract data from the website mentioned above.
-#### A jupyter notebook file called “01_Exploration_and_Cleanup” which uses Pandas to explore and clean the data extracted from the website.
-#### A jupyter notebook file called “02_Analysis” which uses Pandas and Matplotlib to run linear regressions and generate regressions graphs for the 4 relationships being analyzed.
+#### A jupyter notebook file called “00_Extraction_with_API”.
+This jupyter notebook is the file we used for Data Extraction. We used it to scrape the data via an API. We pulled in all the necessary data and put it into a data frame, which was then exported to excel, to pass it to the Data Exploration and Cleanup effort.
+#### A jupyter notebook file called “01_Exploration_and_Cleanup”.
+This jupyter notebook is the file we used for data exploration and cleanup.
+We loaded the data exported from the 00_Extraction_with_API jupyter notebook file. We examined the data and then we “cleaned” the data. For example, we had "." instead of Null in many cells. These issues, as well as null values were removed from the dataframe. We also made sure that the dataframe structure was consistent and that the columns were in the right format, for us to do some math on it. We then created percentage changes in order to normalize the data. Finally, we exported the data to excel to pass it to the Analysis effort.
+#### A jupyter notebook file called “02_Analysis”.
+This jupyter notebook file was created to analyze the data, and generate scatter plots with their regression equation lines and R-Squareds. We loaded the data exported by the 01_Exploration_and_Cleanup jupyter notebook file. We created a function that we could use, whereby we pass the necessary inputs  to do a traditional x y linear regression. 
 #### A jupyter notebook file called “csv_to_html” which uses Pandas to convert the csv file (with the underlying data for the 4 relationships) to an HTML file. 
 #### A folder called Output which  has the output generated from the 4 jupyter notebook files mentioned above. 
 #### A CSS file called “styles.css” which is used by the 51 HTML files in this folder.
