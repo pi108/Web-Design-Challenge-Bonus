@@ -10,6 +10,7 @@ We analyzed data for the above relationships for the last 10 years (the time per
 
 # To accomplish this analysis, we first extracted data using an API from the following website:
 https://fred.stlouisfed.org/
+
 We then used the Pandas and Matplotlib libraries to clean the data, analyze the data, run regression analyses, and plot 48 regression graphs (12 each for the 4 sets of relationships mentioned above). 
 
 # This folder contains the following items:
