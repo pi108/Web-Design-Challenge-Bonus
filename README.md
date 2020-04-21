@@ -52,6 +52,6 @@ When we look at the entire period (2010-2020) as a whole, the R-Squared was not 
 When we look at each year individually, the R-Squared was meaningful for the following years:
 2010, 2013, 2016, 2017, 2020.
 ## 4. Relationship between the Dow Jones Industrial Average (DJIA) and the Indian Rupee to US Dollar Exchange Rate:
-When we look at the entire period (2010-2020) as a whole, the R-Squared was meaningful i.e. there was a statistically significant positive relationship.
+When we look at the entire period (2010-2020) as a whole, the R-Squared was meaningful. There was a statistically significant positive relationship.
 When we look at each year individually, the R-Squared was meaningful for the following years:
 2010, 2013, 2020.
