@@ -36,3 +36,22 @@ This file contains a comparison of the 4 relationships on one single page.
 #### 48 “visualization.html” files: 
 These 48 files contain the in-depth analysis of each of the 4 relationships mentioned above.
 There are 12 files for each of the 4 relationships – one file for the entire period (04/19/2010 to 04/09/2020), and 11 files for each of the individual years during that time period).
+
+# Key Findings from our Analysis:
+
+## 1. Relationship between the Dow Jones Industrial Average (DJIA) and the price of Brent Crude Oil:
+When we look at the entire period (2010-2020) as a whole, the R-Squared was not meaningful i.e. there was no statistically significant relationship.
+When we look at each year individually, the R-Squared was meaningful for the following years:
+2010, 2014, 2016, 2017, 2020.
+## 2. Relationship between the Dow Jones Industrial Average (DJIA) and the price of Gold:
+When we look at the entire period (2010-2020) as a whole, the R-Squared was not meaningful i.e. there was no statistically significant relationship.
+When we look at each year individually, the R-Squared was meaningful for the following years:
+2010, 2013, 2014, 2019.
+## 3. Relationship between the Dow Jones Industrial Average (DJIA) and the Chinese Yuan to US Dollar Exchange Rate:
+When we look at the entire period (2010-2020) as a whole, the R-Squared was not meaningful i.e. there was no statistically significant relationship.
+When we look at each year individually, the R-Squared was meaningful for the following years:
+2010, 2013, 2016, 2017, 2020.
+## 4. Relationship between the Dow Jones Industrial Average (DJIA) and the Indian Rupee to US Dollar Exchange Rate:
+When we look at the entire period (2010-2020) as a whole, the R-Squared was meaningful i.e. there was a statistically significant positive relationship.
+When we look at each year individually, the R-Squared was meaningful for the following years:
+2010, 2013, 2020.
